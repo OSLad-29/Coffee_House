@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard - Coffee House</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header>
+    <h1>Coffee House Admin Dashboard</h1>
+    <button id="logout-btn">Logout</button>
+  </header>
+
+  <main>
+    <section id="dashboard-content">
+      <div class="admin-tabs">
+        <button class="tab-btn active" data-tab="orders">Orders</button>
+        <button class="tab-btn" data-tab="reservations">Reservations</button>
+        <button class="tab-btn" data-tab="analytics">Analytics</button>
+      </div>
+      
+      <div id="orders-tab" class="tab-content active">
+        <h2>Customer Orders</h2>
+        <div id="orders-display"></div>
+      </div>
+      
+      <div id="reservations-tab" class="tab-content">
+        <h2>Table Reservations</h2>
+        <div id="reservations-display"></div>
+      </div>
+      
+      <div id="analytics-tab" class="tab-content">
+        <h2>Sales Analytics</h2>
+        <div id="analytics-display"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

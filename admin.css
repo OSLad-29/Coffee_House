@@ -1,0 +1,62 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf4f5;
+  margin: 0;
+  padding: 0;
+  color: #3b141c;
+}
+
+header {
+  background-color: #3b141c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add admin-specific styles for tabs, tables, etc. */
+.admin-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #3b141c;
+}
+
+.tab-btn.active {
+  border-bottom-color: #f3961c;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Status badges */
+.status-pending { color: #FF9800; }
+.status-preparing { color: #2196F3; }
+.status-ready { color: #4CAF50; }
+.status-completed { color: #607D8B; }
+.status-cancelled { color: #F44336; }

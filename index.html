@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h1 class="logo-text">☕ Coffee</h1>
+      </a>
+      <ul class="nav-menu" id="nav-menu" role="menu" aria-label="Primary navigation">
+        <li class="nav-item" role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+        <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li class="nav-item" role="none"><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
+        <li class="nav-item" role="none"><a href="#booking" class="nav-link" role="menuitem">Book or Order</a></li>
+        <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        <li class="nav-item" role="none"><a href="login.html" class="nav-link" role="menuitem">Login</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" tabindex="-1">
+      <div class="section-content">
+        <div class="hero-details">
+          <h2 class="title">Best Coffee</h2>
+          <h3 class="subtitle">Make your day great with our special coffee!</h3>
+          <p class="description">
+            Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.
+          </p>
+
+          <div class="buttons">
+            <a href="#menu" class="button order-now">Order Now</a>
+            <a href="#contact" class="button contact-us">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="" alt="Cup of coffee on wooden table" class="hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section" id="about" tabindex="-1">
+      <div class="about-image-wrapper">
+        <img src="public/images/About.jpg" alt="Cozy coffee shop interior" class="about-image" />
+      </div>
+      <div class="about-details">
+        <h2 class="section-title">About Us</h2>
+        <p class="text">
+          At Coffee House in Braam, Johannesburg, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike.
+          We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.
+        </p>
+        <div class="social-link-list" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section section-content" tabindex="-1">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-items">
+
+        <!-- Coffee Items -->
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Rich espresso with steamed milk & foam.</p>
+          <div class="price">R35.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="cappuccino">-</button>
+            <span class="quantity" data-id="cappuccino">0</span>
+            <button class="quantity-btn plus" data-id="cappuccino">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/americano.jpg" alt="Americano" />
+          <h3>Americano</h3>
+          <p>Smooth black coffee with a bold taste.</p>
+          <div class="price">R28.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="americano">-</button>
+            <span class="quantity" data-id="americano">0</span>
+            <button class="quantity-btn plus" data-id="americano">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/latte.jpg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>Espresso with steamed creamy milk.</p>
+          <div class="price">R34.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="latte">-</button>
+            <span class="quantity" data-id="latte">0</span>
+            <button class="quantity-btn plus" data-id="latte">+</button>
+          </div>
+        </article>
+
+        <!-- Tea Items -->
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Green Tea.jpg" alt="Green Tea" />
+          <h3>Green Tea</h3>
+          <p>Fresh and calming with a clean finish.</p>
+          <div class="price">R25.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="green-tea">-</button>
+            <span class="quantity" data-id="green-tea">0</span>
+            <button class="quantity-btn plus" data-id="green-tea">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Rooibos.jpg" alt="Rooibos Tea" />
+          <h3>Rooibos Tea</h3>
+          <p>Locally loved herbal South African tea.</p>
+          <div class="price">R20.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="rooibos-tea">-</button>
+            <span class="quantity" data-id="rooibos-tea">0</span>
+            <button class="quantity-btn plus" data-id="rooibos-tea">+</button>
+          </div>
+        </article>
+
+        <!-- Bakery Items -->
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Butter Croissant.jpg" alt="Butter Croissant" />
+          <h3>Butter Croissant</h3>
+          <p>Freshly baked, flaky and buttery delight.</p>
+          <div class="price">R22.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="butter-croissant">-</button>
+            <span class="quantity" data-id="butter-croissant">0</span>
+            <button class="quantity-btn plus" data-id="butter-croissant">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/blueberry.jpg" alt="Blueberry Muffin" />
+          <h3>Blueberry Muffin</h3>
+          <p>Soft muffin packed with juicy blueberries.</p>
+          <div class="price">R18.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="blueberry-muffin">-</button>
+            <span class="quantity" data-id="blueberry-muffin">0</span>
+            <button class="quantity-btn plus" data-id="blueberry-muffin">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Glazed Donut.jpg" alt="Glazed Donut" />
+          <h3>Glazed Donut</h3>
+          <p>Classic donut with sweet sugar glaze.</p>
+          <div class="price">R15.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="glazed-donut">-</button>
+            <span class="quantity" data-id="glazed-donut">0</span>
+            <button class="quantity-btn plus" data-id="glazed-donut">+</button>
+          </div>
+        </article>
+
+        <!-- Cakes -->
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Chocolate Cake.jpg" alt="Chocolate Cake" />
+          <h3>Chocolate Cake</h3>
+          <p>Moist slice with rich chocolate ganache.</p>
+          <div class="price">R30.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="chocolate-cake">-</button>
+            <span class="quantity" data-id="chocolate-cake">0</span>
+            <button class="quantity-btn plus" data-id="chocolate-cake">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Red Velvet Cake.jpg" alt="Red Velvet Cake" />
+          <h3>Red Velvet Cake</h3>
+          <p>Fluffy red layers with cream cheese frosting.</p>
+          <div class="price">R32.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="red-velvet-cake">-</button>
+            <span class="quantity" data-id="red-velvet-cake">0</span>
+            <button class="quantity-btn plus" data-id="red-velvet-cake">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Lemon Cake.jpg" alt="Lemon Cake" />
+          <h3>Lemon Cake</h3>
+          <p>Light lemon sponge with a tangy zest glaze.</p>
+          <div class="price">R28.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="lemon-cake">-</button>
+            <span class="quantity" data-id="lemon-cake">0</span>
+            <button class="quantity-btn plus" data-id="lemon-cake">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" tabindex="0">
+          <img src="public/images/Vanilla Cake.jpg" alt="Vanilla Cake" />
+          <h3>Vanilla Cake</h3>
+          <p>Classic vanilla sponge with vanilla bean frosting.</p>
+          <div class="price">R26.00</div>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="vanilla-cake">-</button>
+            <span class="quantity" data-id="vanilla-cake">0</span>
+            <button class="quantity-btn plus" data-id="vanilla-cake">+</button>
+          </div>
+        </article>
+
+      </div>
+      
+      <!-- Cart Section -->
+      <div class="cart-section">
+        <h3>Your Order</h3>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: R0.00</div>
+        <button id="checkout-btn" class="button order-now">Proceed to Checkout</button>
+      </div>
+    </section>
+
+    <!-- Reservation & Pickup Section -->
+    <section id="booking" class="booking-section section-content" tabindex="-1">
+      <h2 class="section-title">Book a Table or Order for Pickup</h2>
+      <p class="section-subtitle">Make your visit easier by reserving or ordering in advance!</p>
+
+      <div class="booking-options">
+
+        <!-- Table Reservation Form -->
+        <div class="booking-card">
+          <h3>Reserve a Table</h3>
+          <form id="reservation-form" class="booking-form" novalidate>
+            <input type="text" placeholder="Full Name" name="name" required />
+            <input type="email" placeholder="Email Address" name="email" required />
+            <input type="tel" placeholder="Phone Number" name="phone" required />
+            <select name="guests" required>
+              <option value="" disabled selected>Number of Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+            </select>
+            <input type="date" name="date" required min="<?= date('Y-m-d') ?>" />
+            <input type="time" name="time" required />
+            <textarea placeholder="Special Requests (optional)" name="requests"></textarea>
+
+            <div class="payment-section">
+              <label for="reservation-amount">Amount to Pay (R50 per guest)</label>
+              <input type="number" id="reservation-amount" name="amount" readonly />
+            </div>
+
+            <button type="submit" class="button order-now">Reserve & Pay</button>
+          </form>
+
+          <div id="reservation-success" class="success-message" style="display: none;">
+            ✅ Reservation confirmed! We'll send you a confirmation shortly.
+          </div>
+        </div>
+
+        <!-- Order Pickup Form -->
+        <div class="booking-card">
+          <h3>Order for Pickup</h3>
+          <form id="pickup-form" class="booking-form" novalidate>
+            <input type="text" placeholder="Full Name" name="name" required />
+            <input type="tel" placeholder="Phone Number" name="phone" required />
+            <input type="text" placeholder="Order (e.g., 2x Cappuccino, 1x Croissant)" name="order" required />
+            <input type="time" placeholder="Pickup Time" name="pickup-time" required />
+
+            <div class="payment-section">
+              <label for="pickup-amount">Amount to Pay</label>
+              <input type="number" id="pickup-amount" name="amount" placeholder="Enter amount in ZAR" required min="1" />
+            </div>
+
+            <button type="submit" class="button order-now">Pay & Order</button>
+          </form>
+
+          <div id="pickup-success" class="success-message" style="display: none;">
+            ✅ Your order is confirmed. See you soon!
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+            <div id="form-response"></div>
+          </form>
+
+          <div class="physical-address">
+            <h3>Visit Us</h3>
+            <p>Coffee House HQ</p>
+            <p>123 Roast Street</p>
+            <p>Cape Town, 8001</p>
+            <p>South Africa</p>
+            <p>Phone: +27 11 123 4567</p>
+            <p>Email: info@coffeehouse.co.za</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chat-toggle" class="chat-toggle" aria-label="Open Chat">
+      💬
+    </button>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot" aria-live="polite" aria-atomic="true">
+      <header class="chatbot-header">
+        <h4>Chat with Agent</h4>
+        <button id="chat-close" aria-label="Close Chat">✖️</button>
+      </header>
+      <div id="chat-messages" class="chat-messages" tabindex="0"></div>
+      <div class="chat-input-area">
+        <input id="chat-input" type="text" placeholder="Type your message..." aria-label="Message input" />
+        <button id="send-btn" aria-label="Send message">Send</button>
+      </div>
+      <button id="call-agent" class="call-agent-btn">📞 Call Agent</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Coffee House - All rights reserved.</p>
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

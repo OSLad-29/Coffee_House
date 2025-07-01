@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-color: #faf4f5;
+  --error-color: #e74c3c;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-header h2 {
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.login-header i {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 38px;
+  color: var(--primary-color);
+}
+
+select, input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-login:hover {
+  background-color: #d1790f;
+}
+
+.btn-login i {
+  margin-right: 8px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.form-footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-footer p {
+  margin: 0.5rem 0;
+}
+
+.error-message {
+  color: var(--error-color);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+}
